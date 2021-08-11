@@ -1,2 +1,0 @@
-# termonuke
-prueba Github pages
