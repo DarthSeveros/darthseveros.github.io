@@ -8,7 +8,7 @@ function setTime(){
     if (month == 3) {
         day -= 30;
     }
-    if (hour <= 14) {
+    if (hour >= 14) {
         day -= 1;
     }
     document.getElementById("days").innerHTML = (20 - day) + "<h3>Días</h3>";
