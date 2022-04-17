@@ -1,3 +1,7 @@
+body {
+    background-image: url(../img/loveismyweapon.png);
+    background-size: auto;
+}
 .date {
     font-size: 40px;
     text-align: center;
