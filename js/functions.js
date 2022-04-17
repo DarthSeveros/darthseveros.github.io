@@ -9,7 +9,8 @@ function setTime(){
         day -= 30;
     }
     if (hour >= 14) {
-        day -= 1;
+        day += 1;
+        hour -= 23;
     }
     document.getElementById("days").innerHTML = (20 - day) + "<h3>Días</h3>";
     document.getElementById("hours").innerHTML = (14 - hour) + "<h3>Horas</h3>";
