@@ -13,7 +13,7 @@ function setTime(){
         hour -= 24;
     }
     document.getElementById("days").innerHTML = (20 - day) + "<h3>Días</h3>";
-    document.getElementById("hours").innerHTML = (19 - hour) + "<h3>Horas</h3>";
+    document.getElementById("hours").innerHTML = (18 - hour) + "<h3>Horas</h3>";
     document.getElementById("minutes").innerHTML = (59 - min) + "<h3>Minutos</h3>";
     document.getElementById("seconds").innerHTML = (60 - sec) + "<h3>Segundos</h3>";
     setTimeout(function () { setTime()}, 500);
