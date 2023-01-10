@@ -18,13 +18,19 @@ body {
     87.5% {color: violet}
     100% {color: red}
 }
+.nombre {
+    color: #480ca8;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    animation: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
 .titulo {
     color: #480ca8;
     font-weight: bold;
     font-family: 'Unbounded', cursive;
-    animation: none;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
 }
 
 .link-morado {
@@ -49,8 +55,8 @@ body {
 
 .reveal{
     position: relative;
-    transform: translateX(0px);
-    opacity: 1;
+    transform: translateX(100px);
+    opacity: 0;
     transition: 0.5s all ease;
   }
   
@@ -67,11 +73,6 @@ body {
     width: 128px;
     border-color: rgb(211, 211, 211);
     background-color: #fff;
-}
-
-.ico-circle:hover {
-    transform: scale(1.15,1.15);
-    transition-duration: 0.5s;
 }
 
 .card {
