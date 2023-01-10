@@ -1,22 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
 
 body {
     background-image: url(../img/loveismyweapon.png);
     background-size: auto;
 }
-.date {
-    font-size: 40px;
-    text-align: center;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    border-radius: 50%;
-    margin-top: 100px;
+
+@keyframes example {
+    12.5%   {color: red;}
+    25%  {color: orange;}
+    37.5%  {color: yellow;}
+    50% {color: green;}
+    62.5% {color: blue}
+    75% {color: indigo}
+    87.5% {color: violet}
+    100% {color: red}
+}
+.titulo {
+    color: #480ca8;
     font-weight: bold;
-    font-family: 'Akshar', sans-serif;
+    font-family: 'Unbounded', cursive;
+    animation: none;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
 
-.titulo {
-    font-weight: bold;
-    font-family: 'Akshar', sans-serif;
+.link-morado {
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    color: #480ca8;
+}
+
+.border-morado {
+    border-color: #480ca8;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 5px;
+}
+
+.contenedor {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.reveal{
+    position: relative;
+    transform: translateX(0px);
+    opacity: 1;
+    transition: 0.5s all ease;
+  }
+  
+.reveal.active{
+    transform: translateX(0);
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+.ico-circle {
+    display:inline-flex;
+    align-items: center;
+    height: 128px;
+    width: 128px;
+    border-color: rgb(211, 211, 211);
+    background-color: #fff;
+}
+
+.ico-circle:hover {
+    transform: scale(1.15,1.15);
+    transition-duration: 0.5s;
+}
+
+.card {
+    height: 24rem;
 }

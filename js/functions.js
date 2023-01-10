@@ -1,22 +1,17 @@
-function setTime(){
-    var date = new Date();
-    var month = date.getMonth();
-    var day = date.getDate();
-    var hour = date.getHours();
-    var min = date.getMinutes();
-    var sec = date.getSeconds();
-    if (month == 3) {
-        day -= 30;
+function reveal() {
+    var reveals = document.getElementsByClassName("reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
     }
-    if (hour >= 14) {
-        day += 1;
-        hour -= 24;
-    }
-    document.getElementById("days").innerHTML = (20 - day) + "<h3>Días</h3>";
-    document.getElementById("hours").innerHTML = (18 - hour) + "<h3>Horas</h3>";
-    document.getElementById("minutes").innerHTML = (59 - min) + "<h3>Minutos</h3>";
-    document.getElementById("seconds").innerHTML = (60 - sec) + "<h3>Segundos</h3>";
-    setTimeout(function () { setTime()}, 500);
-}
-
-setTime();
+  }
+  
+  window.addEventListener("scro", reveal);
