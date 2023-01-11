@@ -46,11 +46,9 @@ body {
     border-width: 5px;
 }
 
-.contenedor {
-    margin-top: 100px;
-    margin-bottom: 200px;
-    display: flex;
-    align-items: center;
+section {
+    margin-top: 200px;
+    margin-bottom: 400px;
 }
 
 .reveal{
