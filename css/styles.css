@@ -29,6 +29,14 @@ h4.nombre {
     font-size: 20px;
 }
 
+.link-darkblue {
+    color: #304F66;
+}
+
+.link-darkblue:hover {
+    color: #3273a1;
+}
+
 .titulo {
     color: #487799;
     font-size: 40px;
