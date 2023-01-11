@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap');
 
 body {
     background-image: url(../img/loveismyweapon.png);
@@ -20,11 +21,21 @@ body {
 }
 .nombre {
     color: #480ca8;
-    font-weight: bold;
-    font-family: 'Press Start 2P', cursive;
+    font-weight: 700;
+    font-family: 'Jura', sans-serif;
     animation: example;
     animation-duration: 6s;
     animation-iteration-count: infinite;
+}
+
+h1.nombre {
+    font-size: 60px;
+}
+h3.nombre {
+    font-size: 40px;
+}
+h4.nombre {
+    font-size: 20px;
 }
 
 .titulo {
@@ -33,11 +44,6 @@ body {
     font-family: 'Unbounded', cursive;
 }
 
-.link-morado {
-    font-family: 'VT323', monospace;
-    font-size: 2rem;
-    color: #480ca8;
-}
 
 .border-morado {
     border-color: #480ca8;
