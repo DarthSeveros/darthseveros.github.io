@@ -5,27 +5,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap');
 
 body {
-    background-image: url(../img/loveismyweapon.png);
+    background-image: linear-gradient(#eaf5ff, #fff);
     background-size: auto;
 }
 
-@keyframes example {
-    12.5%   {color: red;}
-    25%  {color: orange;}
-    37.5%  {color: yellow;}
-    50% {color: green;}
-    62.5% {color: blue}
-    75% {color: indigo}
-    87.5% {color: violet}
-    100% {color: red}
-}
 .nombre {
-    color: #480ca8;
+    color: #487799;
     font-weight: 700;
     font-family: 'Jura', sans-serif;
-    animation: example;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
+}
+
+.bg-blue {
+    background-color: #0D324D;
 }
 
 h1.nombre {
@@ -39,9 +30,10 @@ h4.nombre {
 }
 
 .titulo {
-    color: #480ca8;
+    color: #487799;
+    font-size: 40px;
     font-weight: bold;
-    font-family: 'Unbounded', cursive;
+    font-family: 'Jura', sans-serif;
 }
 
 
@@ -81,4 +73,8 @@ section {
 
 .card {
     height: 24rem;
+}
+
+.shadow-rb {
+    box-shadow: 10px 10px 20px #b3bcc5;
 }
