@@ -1,10 +1,10 @@
 function reveal() {
-    var reveals = document.getElementsByClassName("reveal");
+    let reveals = document.getElementsByClassName("reveal");
   
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
+    for (let i = 0; i < reveals.length; i++) {
+      let windowHeight = window.innerHeight;
+      let elementTop = reveals[i].getBoundingClientRect().top;
+      let elementVisible = 150;
   
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
