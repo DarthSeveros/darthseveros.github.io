@@ -5,8 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap');
 
 body {
-    background-image: linear-gradient(#eaf5ff, #fff);
-    background-size: auto;
+    background-image: linear-gradient(#d5ecff, #fff);
+    background-size: cover;
 }
 
 .nombre {
@@ -16,7 +16,11 @@ body {
 }
 
 .bg-lightblue {
-    background-color: #eaf5ff;
+    background-color: #d5ecff;
+}
+
+.principal {
+    height: max-content;
 }
 
 h1.nombre {
@@ -85,4 +89,19 @@ section {
 
 .shadow-rb {
     box-shadow: 10px 10px 20px #b3bcc5;
+}
+
+#text-caracter {
+    font-size: 65px;
+    user-select: none;
+    animation-name: cursor;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes cursor {
+    0% { opacity: 0;}
+    40% { opacity: 0;}
+    60% {opacity: 1;}
 }
