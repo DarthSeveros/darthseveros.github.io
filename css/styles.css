@@ -98,7 +98,7 @@ section {
 }
 
 #text-caracter {
-    font-size: 65px;
+    font-size: 4.5rem;
     user-select: none;
     animation-name: cursor;
     animation-duration: 500ms;
@@ -109,6 +109,12 @@ section {
 @media screen and (max-width: 580px){
     .reveal {
         transform: translateX(10px);
+    }
+    #hola {
+        font-size: 3rem;
+    }
+    #text-caracter {
+        font-size: 3.5rem;
     }
 }
 
