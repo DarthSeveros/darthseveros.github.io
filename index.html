@@ -19,7 +19,7 @@
     <meta property="og:image:height" content="256">
     <meta property="og:image:type" content="image/svg">
   </head>
-  <body>
+  <body class="ff-jura">
     <div>
       <div class="w-100" style="background-color: #b3ddfd;">
         <img class="d-block mx-auto" src="img/logo-top.svg" alt="ji-logo" width="360px">
@@ -28,36 +28,40 @@
     
     <header class="navbar navbar-expand-lg sticky-md-top bg-lightblue border-bottom border-white">
       <nav class="container-fluid mx-auto">
-        <div class="navbar-nav flex-row fs-4">
-          <a class="nav-link mx-3 link-darkblue fs-1" href="#aboutme">Sobre mí</a>
-          <a class="nav-link mx-3 link-darkblue fs-1" href="#stack">Tecnologías</a>
-          <a class="nav-link mx-3 link-darkblue fs-1" href="#projects">Proyectos</a>
-        </div>
-        <div class="navbar-nav d-flex flex-row mx-auto mx-md-0">
-          <a class="nav-link mx-3" href="https://github.com/DarthSeveros" target="_blank"><img src="img/github.svg" alt="" height="65"></a>
-          <a class="nav-link mx-3" href="https://www.linkedin.com/in/josé-velásquez-castro-506384144/"><img src="img/linkedin.svg" target="_blank" alt="" height="65"></a>
-        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarItems">
+          <div class="navbar-nav">
+            <a class="nav-link mx-3 link-darkblue fs-navitem" href="#aboutme">Sobre mí</a>
+            <a class="nav-link mx-3 link-darkblue fs-navitem" href="#stack">Tecnologías</a>
+            <a class="nav-link mx-3 link-darkblue fs-navitem" href="#projects">Proyectos</a>
+            <a class="nav-link text-decoration-none mx-3 link-darkblue fs-navitem" href="documents/CV_Jose_Velasquez_Castro.pdf" download target="_blank"><i class="bi bi-download"></i> Curriculum</a>
+          </div>
+          <div class="navbar-nav flex-row">
+            <a class="nav-link mx-3" href="https://github.com/DarthSeveros" target="_blank"><img src="img/github.svg" alt=""></a>
+            <a class="nav-link mx-3" href="https://www.linkedin.com/in/josé-velásquez-castro-506384144/"><img src="img/linkedin.svg" target="_blank" alt=""></a>
+          </div>
+        </div>    
       </nav> 
     </header>
 
-    <section class="container">
-      <div class="m-auto">
-        <div class="principal">
-          <h1 class="nombre"><span id="hola"></span><span id="text-caracter">|</span></h1>
+    <section class="mx-3">
+      <div class="container-fluid container-md">
+        <div>
+          <h1 class="fs-main fw-bold color-darkblue-1"><span id="hola"></span><span id="text-caracter">|</span></h1>
         </div>
-          <div>
-            <h3 class="text-center nombre"><a class="text-decoration-none link-darkblue" href="documents/CV_Jose_Velasquez_Castro.pdf" download target="_blank"><i class="bi bi-download"></i> Curriculum</a></h3>
-          </div>
     </section>
     
-    <section id="aboutme">
-      <div class="container-lg">
-        <h2 class="titulo text-center">Sobre mí</h2>
-        <br>
+    <section id="aboutme" class="mx-3">
+      <div class="container-fluid container-md">
+        <h2 class="text-center color-darkblue-1">Sobre mí</h2>
         <h4 class="description-text">Soy un joven autodidacta al que le motiva obtener nuevos conocimientos y desafíos, determinado a la hora de realizar una labor 
           y en constante estudio para lograr una mayor eficiencia en los desarrollos de distintas aplicaciones. Actualmente en busca de práctica.</h4>
       </div>
     </section>
+
+
     <section id="stack" class="container">
       <div class="m-auto">
         <h2 class="text-center titulo">Stack</h2>
@@ -100,7 +104,7 @@
         <h2 class="text-center titulo">Proyectos</h2>
         <div class="row">
           <div class="col">
-            <div class="card mx-auto my-2 border-0 shadow-rb" style="width: 18rem;">
+            <div class="card mx-auto my-2 border-0 shadow-rb" style="width: 18rem; height: 27rem;">
               <img src="img/nutricionista.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Nutricionista</h5>
@@ -110,7 +114,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card mx-auto my-2 border-0 shadow-rb" style="width: 18rem;">
+            <div class="card mx-auto my-2 border-0 shadow-rb" style="width: 18rem; height: 27rem;">
               <img src="img/wiki.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Wiki</h5>
@@ -120,7 +124,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card mx-auto my-2 border-0 shadow-rb" style="width: 18rem;">
+            <div class="card mx-auto my-2 border-0 shadow-rb" style="width: 18rem; height: 27rem;">
               <img src="img/elgranviaje.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">El gran viaje</h5>
