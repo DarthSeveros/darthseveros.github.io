@@ -33,6 +33,12 @@ h4.nombre {
     font-size: 20px;
 }
 
+.description-text {
+    font-size: 2rem;
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+}
+
 .link-darkblue {
     color: #304F66;
 }
@@ -63,7 +69,7 @@ section {
 
 .reveal{
     position: relative;
-    transform: translateX(100px);
+    transform: translateX(50px);
     opacity: 0;
     transition: 0.5s all ease;
   }
@@ -98,6 +104,12 @@ section {
     animation-duration: 500ms;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+@media screen and (max-width: 580px){
+    .reveal {
+        transform: translateX(10px);
+    }
 }
 
 @keyframes cursor {
