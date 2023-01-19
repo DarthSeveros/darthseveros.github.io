@@ -26,11 +26,6 @@ body {
 .ff-jura {
     font-family: 'Jura', sans-serif;
 }
-
-.nav-link > img {
-    height: 2.5rem;
-}
-
 .color-darkblue-1 {
     color: #487799;
 }
@@ -56,18 +51,20 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
 }
-.card-text, .card-body > a{
+
+.card-text, .card-body > div > a{
     font-size: 2rem;
     font-weight: 500;
 }
 
-
-@media screen and (min-width: 990px){
-    .fs-navitem {
-        font-size: 1.75rem;
-    }
+#text-caracter {
+    font-size: 4.5rem;
+    user-select: none;
+    animation-name: cursor;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
-
 
 .link-darkblue {
     color: #304F66;
@@ -75,11 +72,6 @@ body {
 
 .link-darkblue:hover {
     color: #3273a1;
-}
-
-section {
-    margin-top: 200px;
-    margin-bottom: 400px;
 }
 
 .reveal{
@@ -104,21 +96,57 @@ section {
     background-color: #fff;
 }
 
-.card {
-    height: 24rem;
+.icon {
+    fill: #3273a1;
+    height: 2.5rem;
+    transition: fill-opacity 200ms;
+}
+
+@media screen and (min-width: 990px) {
+    .fs-navitem {
+        font-size: 1.55rem;
+    }
+
+    .underline-hover::after {
+        content: '';
+        width: 0px;
+        height: 3px;
+        display: block;
+        background:#3273a1;
+        transition: 300ms;
+        transition-timing-function: ease-out;
+    }
+
+    .underline-hover:hover::after {
+        width: 100%;
+    }
+
+    .maxw-lg {
+        max-width: 35rem;
+    }
+    .h-lg {
+        height: 38rem !important;
+    }
+
+    .card-title {
+        font-size: 1.75rem;
+    }
+    .card-text, .card-body > div > a{
+        font-size: 1.25rem;
+    }
+    
+    .icon:hover {
+        fill-opacity: 0.7;
+    }
+}
+
+section {
+    padding-top: 200px;
+    margin-bottom: 400px;
 }
 
 .shadow-rb {
     box-shadow: 10px 10px 20px #b3bcc5;
-}
-
-#text-caracter {
-    font-size: 4.5rem;
-    user-select: none;
-    animation-name: cursor;
-    animation-duration: 500ms;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 
