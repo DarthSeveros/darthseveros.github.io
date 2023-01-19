@@ -52,6 +52,9 @@ body {
 }
 
 .card-title {
+    font-size: 2.5rem;
+}
+.card-text, .card-body > a{
     font-size: 2rem;
 }
 
