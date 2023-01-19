@@ -17,7 +17,8 @@ body {
     font-size: 4.25rem;
 }
 
-h2 {
+.title {
+    color: #487799;
     font-size: 3rem;
     font-weight: 700;
 }
@@ -34,6 +35,25 @@ h2 {
     color: #487799;
 }
 
+.bg-lightblue {
+    background-color: #b3ddfd;
+}
+
+.description-text {
+    line-height: 1.6;
+    font-size: 2.25rem;
+}
+
+.border-morado {
+    border-color: #480ca8;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 5px;
+}
+
+.card-title {
+    font-size: 2rem;
+}
 
 
 @media screen and (min-width: 990px){
@@ -43,43 +63,12 @@ h2 {
 }
 
 
-
-.nombre {
-    color: #487799;
-    font-weight: 700;
-    font-family: 'Jura', sans-serif;
-}
-
-.bg-lightblue {
-    background-color: #b3ddfd;
-}
-
-.description-text {
-    font-size: 2rem;
-    font-family: 'Jura', sans-serif;
-}
-
 .link-darkblue {
     color: #304F66;
 }
 
 .link-darkblue:hover {
     color: #3273a1;
-}
-
-.titulo {
-    color: #487799;
-    font-size: 40px;
-    font-weight: bold;
-    font-family: 'Jura', sans-serif;
-}
-
-
-.border-morado {
-    border-color: #480ca8;
-    border-style: solid;
-    border-radius: 50%;
-    border-width: 5px;
 }
 
 section {
