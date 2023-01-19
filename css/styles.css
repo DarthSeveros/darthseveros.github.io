@@ -97,9 +97,17 @@ body {
 }
 
 .icon {
-    fill: #3273a1;
+    fill: #304F66;
     height: 2.5rem;
     transition: fill-opacity 200ms;
+}
+
+.border-darkblue {
+    border-bottom-color: #3273a1 !important;
+}
+
+.shadow-b {
+    box-shadow: 0 5px 5px #869cb11f;
 }
 
 @media screen and (min-width: 990px) {
