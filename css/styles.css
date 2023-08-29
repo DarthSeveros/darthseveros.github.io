@@ -123,6 +123,8 @@ section {
 .card-project {
     width: 25rem;
     height: 35rem;
+    border-width: 0px;
+    box-shadow: 0 10px 10px #869cb11f;
 }
 
 .btn-darkblue {
