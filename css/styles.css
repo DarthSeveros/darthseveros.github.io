@@ -136,13 +136,6 @@ section {
         width: 100%;
     }
 
-    .maxw-lg {
-        max-width: 35rem;
-    }
-    .h-lg {
-        height: 38rem !important;
-    }
-
     .card-title {
         font-size: 1.75rem;
     }
