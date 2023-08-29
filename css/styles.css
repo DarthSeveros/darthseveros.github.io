@@ -9,6 +9,27 @@ body {
     background-size: cover;
 }
 
+.btn-animate {
+    color: #0C2863;
+    outline: #0C2863 solid 3px;
+    margin: 5px;
+    border: 0;
+    border-radius: 1px;
+    --percent: 0%;
+    --gradient: linear-gradient(#0C2863 0 0) no-repeat;
+    background: 
+        var(--gradient) 0% 0%,
+        var(--gradient) 100% 0%;
+    background-size: calc(var(--percent)/2) 110%;
+    transition: background-size .5s;
+}
+
+.btn-animate:hover {
+    color: #fff;
+    --percent: 100%;
+    transition: background-size .5s;
+}
+
 .fs-navitem {
     font-size: 1.5rem;
 }
