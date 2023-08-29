@@ -202,6 +202,10 @@ section {
 
 
 @media screen and (max-width: 580px){
+    .card-project {
+        width: 20rem;
+    }
+    
     .reveal {
         transform: translateX(10px);
     }
